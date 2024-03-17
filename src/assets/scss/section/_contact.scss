@@ -1,0 +1,66 @@
+.section_contact {
+    padding: 100px 0 50px;
+    background: #01193f;
+    color: #fff;
+    text-align: center;
+    .title {
+        font-size: 52px;
+
+        .point {
+            font-weight: 700;
+            color: #ffcc00;
+        }
+    }
+
+    .contact_list {
+        margin-top: 50px;
+        li {
+            > span {
+                position: relative;
+                font-size: 20px;
+                font-weight: 700;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 90px;
+                    height: 90px;
+                    margin: 0 auto 15px;
+                    background: #fff;
+                    border-radius: 50%;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 14px;
+                    left: 0;
+                    transform: translateX(-50%);
+                    width: 64px;
+                    height: 64px;
+                }
+                &.mail {
+                    &::after {
+                        background: url(../../img/ico_mail.png) 50% 50% no-repeat;
+                        background-size: 100% auto;
+                    }
+                }
+                &.phone {
+                    &::after {
+                        background: url(../../img/ico_phone.png) 50% 50% no-repeat;
+                        background-size: 100% auto;
+                    }
+                }
+            }
+            & + li {
+                margin-top: 30px;
+            }
+        }
+        
+    }
+}
+
+/*태블릿, 모바일 */
+@media screen and (max-width: 768px) {
+    .section_contact {
+        padding: 60px 0 50px;
+    }
+}

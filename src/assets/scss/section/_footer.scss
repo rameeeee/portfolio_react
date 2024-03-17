@@ -1,0 +1,16 @@
+.footer {
+    padding: 20px 0;
+    background: #01193f;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*태블릿, 모바일 */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 20px 0 50px;
+    }
+}

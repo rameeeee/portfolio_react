@@ -1,0 +1,141 @@
+.work_content {
+    &.work_kb {
+        background: #3366cc;
+        .title_area {
+            position: relative;
+            .title {
+                color: #fff;
+            }
+            .desc {
+                position: absolute;
+                top: 170px;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-left: 90px;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.25);
+                padding: 10px;
+                font-size: 12px;
+                line-height: 16px;
+                color: #444;
+                text-align: left;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -12px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-bottom: 12px solid rgba(255, 255, 255, 0.25);
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+
+                }
+            }
+        }
+        .box_wrap {
+            display: flex;
+            margin-top: 120px;
+            .img_box {
+                width: 660px;
+                height: 400px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                }
+            }
+            .text_area {
+                padding: 20px;
+                .info {
+                    display: block;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+            }
+        }
+        .swiper_area {
+            display: flex;
+            margin-top: 120px;
+            .work_text {
+                margin: 0 0 0 20px;
+                padding: 15px;
+                font-size: 16px;
+                line-height: 22px;
+                color: #fff;
+                text-align: left;
+            }
+        }
+        .work_kb_swiper {
+            width: 360px;                
+            .img_box {
+                width: 100%;
+                img {
+                    vertical-align: top;
+                }
+            }
+            .swiper {
+                padding-bottom: 30px;
+            }
+            .swiper-pagination {
+                bottom: 0;
+                .swiper-pagination-bullet-active {
+                    background: #ffcc00;
+                }
+            }
+        }
+    }
+}
+
+/*태블릿, 모바일 */
+@media screen and (max-width: 768px) {
+    .work_content {
+        &.work_kb {
+            .title_area {
+                .desc {
+                    top: 125px;
+                    margin: 0;
+                    white-space: nowrap;
+                }
+            }
+            .box_wrap {
+                flex-direction: column;
+                .img_box {
+                    width: auto;
+                    margin: 0 auto;
+                    overflow: auto;
+                    -ms-overflow-style: none; 
+                    scrollbar-width: none; 
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+                .text_area {
+                    order: 2;
+                    text-align: center;
+                    .info {
+                        font-size: 16px;
+                    }
+                }
+                &.wrap02 {
+                    margin-top: 50px;
+                }
+            }
+            .swiper_area {
+                flex-direction: column;
+                margin-top: 50px;
+                .work_text {
+                    margin: 20px 0 0 0;
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+            .work_kb_swiper {
+                width: 100%;
+            }
+            
+            .link_text {
+                margin-top: 10px;
+            }
+        }
+    }
+}

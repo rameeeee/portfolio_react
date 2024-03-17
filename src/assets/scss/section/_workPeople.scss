@@ -1,0 +1,49 @@
+.work_content{
+    &.work_people {
+        
+        .box01 {
+            margin-top: 60px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .img_box_wrap {
+            display: flex;
+            margin-top: 50px;
+            
+            .img_box {
+                flex: 1;
+                margin-right: 20px;
+    
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.box03 {
+                    transition-delay: 0.2s;
+                }
+                &.box04 {
+                    transition-delay: 0.4s
+                }
+            }
+        }
+    }
+}
+
+/*태블릿, 모바일 */
+@media screen and (max-width: 768px) {
+    .work_content {
+        &.work_people {
+            .img_box_wrap {
+                flex-direction: column;
+                margin-top: 15px;
+                .img_box {
+                    margin-right: 0;
+                    & + .img_box {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

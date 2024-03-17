@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+//setting
+@import 'setting/fonts';
+@import 'setting/reset';
+@import 'setting/common';
+
+
+// section
+@import 'section/spot';
+@import 'section/content';
+@import 'section/intro';
+@import 'section/work';
+@import 'section/workPeople';
+@import 'section/workKb';
+@import 'section/workSnow';
+@import 'section/workEtc';
+@import 'section/contact';
+@import 'section/footer';

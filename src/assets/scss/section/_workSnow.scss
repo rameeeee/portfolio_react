@@ -1,0 +1,45 @@
+.work_content {
+    &.work_snow {
+        overflow: hidden;
+        .work_snow_swiper {
+            margin-top: 50px;
+            .swiper {
+                overflow: visible;
+            }
+            .swiper-slide {
+                width: 300px;
+                height: 630px;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            .img_box {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+}
+
+/*태블릿, 모바일 */
+@media screen and (max-width: 768px) {
+    .work_content {
+        &.work_snow {
+            .work_snow_swiper {
+                .swiper-slide {
+                    width: 240px;
+                    height: 500px;
+                }
+                .swiper-pagination {
+                    bottom: -30px;
+                    .swiper-pagination-bullet-active {
+                        background: #01193f;
+                    }
+                }
+            }
+
+        } 
+    }
+}

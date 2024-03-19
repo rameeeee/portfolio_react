@@ -2,6 +2,7 @@
   "name": "portfolio_react",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@studio-freight/lenis": "^1.0.19",
     "@testing-library/jest-dom": "^5.17.0",

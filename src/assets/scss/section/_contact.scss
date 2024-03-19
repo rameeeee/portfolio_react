@@ -15,7 +15,9 @@
     .contact_list {
         margin-top: 50px;
         li {
+            position: relative;
             > span {
+                display: block;
                 position: relative;
                 font-size: 20px;
                 font-weight: 700;
@@ -32,7 +34,7 @@
                     content: '';
                     position: absolute;
                     top: 14px;
-                    left: 0;
+                    left: 50%;
                     transform: translateX(-50%);
                     width: 64px;
                     height: 64px;

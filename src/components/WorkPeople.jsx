@@ -31,7 +31,7 @@ const WorkMedia = ({ media }) => {
                 </div>
                 ) : (
                 <div className={item.className} key={item.src}>
-                    <video src={item.src} autoPlay={item.autoPlay} muted={item.muted} loop={item.loop} type={item.fileType}></video>
+                    <video src={item.src} autoPlay={item.autoPlay} muted={item.muted} loop={item.loop} type={item.fileType} playsInline></video>
                     <span className="blind">{item.alt}</span>
                 </div>
                 )

@@ -46,13 +46,17 @@ const WorkSnow = () => {
     }, [])
 
     useEffect(() => {
+        let lastWidth = window.innerWidth;
+    
         const handleResize = () => {
-            window.location.reload(); 
+            if (window.innerWidth !== lastWidth) {
+                window.location.reload();
+            }
+            lastWidth = window.innerWidth;
         };
-
+    
         window.addEventListener('resize', handleResize);
-
-        
+    
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
@@ -89,7 +93,7 @@ const WorkSnow = () => {
             <div className="work_text move_up">
             <p className="text">
                 모바일 기기 너비 및 높이 100%가 될 수 있도록 유연하게 제작하였습니다.<br />
-                한국어뿐만 아니라 일본어, 중국어, 베트남어, 인도네이사어 등 다국어로 페이지를 제작하였습니다.
+                한국어뿐만 아니라 일본어, 중국어, 베트남어, 인도네시아어 등 다국어로 페이지를 제작하였습니다.
             </p>
             <span className="path_text">
                 화면 경로 : 스노우앱 &gt; 이펙트 &gt; 셀프사진관탭 &gt; 컨셉 증명사진관

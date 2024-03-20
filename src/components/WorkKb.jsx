@@ -128,7 +128,12 @@ const WorkKbSlideList = () => {
 }
 
 const WorkKb = () => {
-    
+    useEffect(() => {
+        setTimeout(() => {
+            ScrollTrigger.refresh();
+            console.log("ScrollTrigger refreshed!");
+        }, 500);
+    }, []);
 
     useEffect(() => {
         let ctx = gsap.context(() => {

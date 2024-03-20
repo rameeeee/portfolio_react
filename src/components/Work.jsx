@@ -14,7 +14,7 @@ const workItems = [
     { className: "etc", num: "04", title: "그 외 작업들", component: <WorkEtc /> }
 ];
 
-const Work = () => {
+const Work = ({children}) => {
     const workRef = useRef(null);
 
   

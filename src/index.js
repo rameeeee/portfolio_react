@@ -10,7 +10,6 @@ root.render(
   </React.StrictMode>
 );
 
-
 const handleScroll = () => {
   const items = document.querySelectorAll('.move_up');
   items.forEach(item => {
@@ -23,3 +22,6 @@ const handleScroll = () => {
 
 window.addEventListener('scroll', handleScroll);
 
+
+
+ 

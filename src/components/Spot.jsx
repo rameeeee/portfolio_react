@@ -17,6 +17,8 @@ const SpotTexts = [
 const Spot = () => {
     const spotRef = useRef(null);
 
+
+
     useEffect(() => {
         let ctx = gsap.context(() => {
             gsap.registerPlugin(ScrollTrigger);

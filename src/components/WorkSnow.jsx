@@ -17,6 +17,13 @@ const snowImges = [work03Img01, work03Img02, work03Img03, work03Img04, work03Img
 
 const WorkSnow = () => {
     useEffect(() => {
+        setTimeout(() => {
+            ScrollTrigger.refresh();
+            console.log("ScrollTrigger refreshed!");
+        }, 500);
+    }, []);
+
+    useEffect(() => {
         let ctx = gsap.context(() => {
             gsap.registerPlugin(ScrollTrigger);
             

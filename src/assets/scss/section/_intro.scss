@@ -1,6 +1,6 @@
 .section_intro {
     position: relative;
-    height: 750px;
+    height: 100vh;
     padding-top: 58px;
     overflow: hidden;
     .intro_bg {
@@ -8,7 +8,7 @@
             text-transform: uppercase;
             transform: skew(10deg) rotate(-10deg);
             font-size: 160px;
-            bottom: 80px;
+            bottom: 200px;
             right: 0;
             margin: 0;
             position: absolute;
@@ -95,7 +95,7 @@
                 content: '';
                 position: absolute;
                 top: -25px;
-                right: -33px;
+                right: -54px;
                 width: 50px;
                 height: 50px;
                 background: url(../../img/ico_quote.png) 50% 50% no-repeat;
@@ -110,10 +110,10 @@
 /*태블릿, 모바일 */
 @media screen and (max-width: 768px){
     .section_intro {
-        height: 450px;
         .intro_bg {
             .bg_text {
-                bottom: 34px;
+                bottom: 150px;
+                right: 15px;
                 font-size: 50px;
                 &::before {
                     left: 4px;

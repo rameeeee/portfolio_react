@@ -1,0 +1,33 @@
+.nav_wrap {
+    position: sticky;
+    top: 0;
+    padding: 13px 0;
+    background: #fff;
+    z-index: 100;
+
+    .nav_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav_item {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: -0.3px;
+        padding: 7px 16px;
+        margin-right: 10px;
+        border-radius: 16px;
+        text-decoration: none;
+        color: #000;
+        // transition: background .25s linear;
+        &.on {
+            background-color: #000;
+            color: #fff;
+        }
+        &:last-child {
+            margin-right: 0;
+        }   
+    }
+}

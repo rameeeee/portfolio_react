@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useRef} from 'react'
 
 const Contact = () => {
+    const contactRef = useRef(null);
+
     return (
-        <div className="section_contact">
+        <div className="section_contact" id="Contact" ref={contactRef}>
             <h2 className="title">Contact <em className="point">Me!</em></h2>
             <ul className="contact_list">
                 <li>

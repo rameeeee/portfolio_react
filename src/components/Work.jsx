@@ -122,7 +122,7 @@ const Work = () => {
     }, [])
 
     return (
-        <div className="section_work" ref={workRef}>
+        <div className="section_work" ref={workRef} id="Work">
             <div className="cover_title">
                 {workText.map((text, index) => (
                     <div className={`text_wrap ${index === 0 ? 'upper' : 'lower'}`} key={index}>

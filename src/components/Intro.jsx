@@ -55,7 +55,7 @@ const Intro = () => {
     }, [])
 
     return (
-        <div className="section_intro" ref={introRef}>
+        <div className="section_intro" ref={introRef} id="About">
             <div className="inner">
                 <div className="intro_bg">
                     <div className="bg_text" data-heading="I'm Thinker">I'm Thinker</div>

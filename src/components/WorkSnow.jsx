@@ -19,7 +19,6 @@ const WorkSnow = () => {
     useEffect(() => {
         setTimeout(() => {
             ScrollTrigger.refresh();
-            console.log("ScrollTrigger refreshed!");
         }, 500);
     }, []);
 
@@ -32,7 +31,6 @@ const WorkSnow = () => {
                     const item = document.querySelector(".work_snow_swiper .swiper-wrapper");
                     const itemTrigger = document.querySelector('.work_snow');
                     // const itemSwiper = document.querySelector('.work_snow_swiper');
-                    console.log(document.querySelector('.work_snow').offsetHeight, document.querySelector('.work_snow_swiper').offsetHeight)
                     gsap.to(item, {
                         scrollTrigger: {
                             trigger: itemTrigger,

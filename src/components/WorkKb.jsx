@@ -131,7 +131,6 @@ const WorkKb = () => {
     useEffect(() => {
         setTimeout(() => {
             ScrollTrigger.refresh();
-            console.log("ScrollTrigger refreshed!");
         }, 500);
     }, []);
 

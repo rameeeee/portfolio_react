@@ -29,7 +29,7 @@ const workKbText = [
         src: work02Img02,
         alt: "파킹통장 검색결과 PC 화면",
         info: "PC/MO 파킹통장 신규 추가",
-        link: "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&pkid=68&os=31909250&qvt=0&query=%EC%9B%A1%EC%B9%B4%20%EA%B4%80%EB%9E%8C%ED%8F%89",
+        link: "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
         text: "파킹통장 검색결과 바로가기"
     },
 ]

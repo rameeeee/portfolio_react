@@ -1,14 +1,14 @@
 .section_intro {
     position: relative;
     height: 100vh;
-    // padding-top: 58px;
     overflow: hidden;
+
     .intro_bg {
         .bg_text {
             text-transform: uppercase;
             transform: skew(10deg) rotate(-10deg);
             font-size: 160px;
-            bottom: 200px;
+            bottom: 140px;
             right: 0;
             margin: 0;
             position: absolute;
